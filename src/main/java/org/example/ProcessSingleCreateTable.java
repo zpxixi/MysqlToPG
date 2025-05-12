@@ -159,8 +159,11 @@ public class ProcessSingleCreateTable {
                 }
             }
 
-            String sourceSpec = String.join(" ", specs);
+            if(specs.size() == 4){
+                specs.set(1,"\"pg_catalog\".\"default\"");
+            }
             String targetSpecAboutNull = null;
+            String sourceSpec = String.join(" ", specs);
             if (sourceSpec.contains("DEFAULT NULL")) {
                 targetSpecAboutNull = "NULL";
                 sourceSpec = sourceSpec.replaceAll("DEFAULT NULL", "");

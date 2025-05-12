@@ -5,12 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>convertMysqlDdlToPostgre</artifactId>
+  <artifactId>MysqToPG</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>convertMysqlDdlToPostgre</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <name>MysqlToPG</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

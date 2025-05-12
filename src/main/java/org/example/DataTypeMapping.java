@@ -13,8 +13,8 @@ public class DataTypeMapping {
             = new HashMap<String, String>();
 
     static {
-        MYSQL_TYPE_TO_POSTGRE_TYPE.put("bigint", "bigint");
-        MYSQL_TYPE_TO_POSTGRE_TYPE.put("int", "int");
+        MYSQL_TYPE_TO_POSTGRE_TYPE.put("bigint", "int8");
+        MYSQL_TYPE_TO_POSTGRE_TYPE.put("int", "int4");
         MYSQL_TYPE_TO_POSTGRE_TYPE.put("tinyint", "smallint");
         MYSQL_TYPE_TO_POSTGRE_TYPE.put("smallint", "smallint");
 
